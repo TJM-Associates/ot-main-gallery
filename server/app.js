@@ -1,4 +1,5 @@
 /* eslint-disable no-restricted-syntax */
+require('newrelic');
 const express = require('express');
 const path = require('path');
 const compression = require('compression');
