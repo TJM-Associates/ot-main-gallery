@@ -11,11 +11,11 @@ const getRestaurant = (restaurantId) => {
   return client.execute(query, [rId], { prepare: true });
 };
 
-const postRestaurant = (postData) => {
+const postRestaurant = (postData, restaurantName) => {
   const randomUuid = Uuid.random();
   const query = 'INSERT INTO restaurants(r_id, i_id, restaurant_name, url, source, picture_date, photographer, name) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
   const restaurantId = Number(postData.restaurantId.toString().slice(1));
-  return client.execute(query, [restaurantId, randomUuid, postData.restaurantId, postData.url, postData.source, postData.date, postData.photographer, postData.name], { prepare: true });
+  return client.execute(query, [restaurantId, randomUuid, restaurantName, postData.url, postData.source, postData.date, postData.photographer, postData.name], { prepare: true });
 };
 
 const updateRestaurant = (updateData, restaurantId, imageId) => {

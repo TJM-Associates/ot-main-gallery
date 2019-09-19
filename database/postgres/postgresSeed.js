@@ -21,33 +21,6 @@ const randomSourcePicker = () => {
 const imagesCV = fs.createWriteStream('./database/postgres/seedDatabase.csv');
 imagesCV.write('i_id,url,name,pictureDate,source,photographer,restaurant_id\n', 'utf8');
 
-// const writeData = (writer, encoding, callback) => {
-//   let restaurantId = 1;
-//   for (let images = 1; images < 100000000; images += 10) {
-//     for (let i = images; i < images + 10; i++) {
-//       const iId = i;
-//       const rId = restaurantId;
-//       const randomImageUrl = randomImageUrlGenerator();
-//       const source = randomSourcePicker();
-//       const photographer = faker.name.findName();
-//       const pictureDate = faker.date.past(2).toString();
-//       const name = foodNames[Math.floor(Math.random() * foodNames.length)];
-//       const data = `${iId},${randomImageUrl},${name},${pictureDate},${source},${photographer},${rId}\n`;
-//       if (i === 100000000) {
-//         writer.write(data, encoding, callback);
-//       } else {
-//         const ok = writer.write(data, encoding);
-//       }
-//       if (i < 100)
-//       if (i % 10000 === 0) {
-//         console.log(i);
-//       }
-//     }
-//     restaurantId++;
-//   }
-//   writer.end();
-// };
-
 const writeData = (writer, encoding, callback) => {
   let i = 100000000;
   let restaurantId = 1;

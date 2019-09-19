@@ -2,7 +2,7 @@ config:
   target: 'http://localhost:3002'
   phases:
     - duration: 60
-      arrivalRate: 1
+      arrivalRate: 1000
   payload:
     path: "./stress.csv"
     fields: 

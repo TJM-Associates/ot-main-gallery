@@ -39,7 +39,7 @@ app.get('/api/restaurants/:rid/images', (req, res) => {
 });
 
 app.post('/api/restaurants/:rid/images', (req, res) => {
-  cassandraControl.postRestaurant(req.body)
+  cassandraControl.postRestaurant(req.body, req.params.rid)
     .then(() => {
       res.sendStatus(200);
     })
