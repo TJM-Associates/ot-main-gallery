@@ -2,7 +2,7 @@
 const cassandra = require('cassandra-driver');
 const generateData = require('../seedIndex.js');
 
-const client = new cassandra.Client({ contactPoints: ['127.0.0.1:9042'], localDataCenter: 'datacenter1', keyspace: 'restaurant_images' });
+const client = new cassandra.Client({ contactPoints: ['127.0.0.1:9042', '127.0.0.2:9042', '127.0.0.3:9042'], localDataCenter: 'datacenter1', keyspace: 'restaurant_images' });
 
 const query = 'INSERT INTO restaurants (r_id, i_id, restaurant_name, url, source, picture_date, photographer, name) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
 

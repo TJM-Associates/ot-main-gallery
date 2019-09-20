@@ -2,7 +2,7 @@
 
 CREATE KEYSPACE IF NOT EXISTS restaurant_images 
   WITH REPLICATION = {
-    'class': 'SimpleStrategy', 'replication_factor' : 1
+    'class': 'SimpleStrategy', 'replication_factor' : 2
   };
 
 CREATE TABLE IF NOT EXISTS restaurant_images.restaurants (
