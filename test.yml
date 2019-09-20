@@ -2,13 +2,26 @@ config:
   target: 'http://localhost:3002'
   phases:
     - duration: 60
-      arrivalRate: 1000
+      arrivalRate: 100
   payload:
-    path: "./stress.csv"
-    fields: 
-      - "restaurant_name"
+    -
+      path: "./postStress.csv"
+      fields: 
+        - "url"
+        - "name"
+        - "pictureDate"
+        - "source"
+        - "photographer"
 
 scenarios:
-  - flow:
-    - get:
-        url: "/api/restaurants/{{ restaurant_name }}/images"  
+  - flow: 
+    - post:
+        url: "/api/restaurants/r{{ $randomNumber(1, 10000000) }}/images"  
+        json: 
+          url: "{{ url }}"
+          source: "{{ source }}"
+          date: "{{ pictureDate }}"
+          photographer: "{{ photographer }}"
+          name: "{{ name }}"
+    # - get: 
+    #     url: "/api/restaurants/r{{ $randomNumber(1, 10000000) }}/images"  

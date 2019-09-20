@@ -4,3 +4,4 @@ public/main.mini.js
 images
 coverage
 *.csv
+newrelic.js

@@ -14,7 +14,7 @@ const getRestaurant = (restaurantId) => {
 const postRestaurant = (postData, restaurantName) => {
   const randomUuid = Uuid.random();
   const query = 'INSERT INTO restaurants(r_id, i_id, restaurant_name, url, source, picture_date, photographer, name) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-  const restaurantId = Number(postData.restaurantId.toString().slice(1));
+  const restaurantId = Number(restaurantName.toString().slice(1));
   return client.execute(query, [restaurantId, randomUuid, restaurantName, postData.url, postData.source, postData.date, postData.photographer, postData.name], { prepare: true });
 };
 

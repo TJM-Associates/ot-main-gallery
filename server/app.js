@@ -19,17 +19,17 @@ app.get('/api/restaurants/:rid/images', (req, res) => {
   cassandraControl.getRestaurant(req.params.rid)
     .then((docs) => {
       const reformattedDocs = docs.rows.map((imageDetails) => {
-        for (const key in imageDetails) {
-          if (key === 'restaurant_name') {
-            imageDetails.restaurantId = imageDetails[key];
-            delete imageDetails[key];
-          } else if (key === 'picture_date') {
-            const formattedDate = moment(imageDetails[key]).utc();
-            imageDetails.date = formattedDate;
-            delete imageDetails[key];
-          }
-        }
-        return imageDetails;
+        const reformatted = {
+          r_id: imageDetails.r_id,
+          i_id: imageDetails.i_id,
+          name: imageDetails.name,
+          photographer: imageDetails.photographer,
+          source: imageDetails.source,
+          url: imageDetails.url,
+          date: imageDetails.picture_date,
+          restaurantId: imageDetails.restaurant_name,
+        };
+        return reformatted;
       });
       res.send(reformattedDocs);
     })
