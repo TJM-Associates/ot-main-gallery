@@ -1,6 +1,4 @@
 node_modules
-public/main.js
-public/main.mini.js
 images
 coverage
 *.csv
