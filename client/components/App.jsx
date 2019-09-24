@@ -57,5 +57,5 @@ Photos
   }
 }
 
-// window.Gallery = App;
+window.Gallery = App;
 export default App;
