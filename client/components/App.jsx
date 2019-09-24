@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   getImages() {
-    axios.get(`http://localhost:3002/api${window.location.pathname}images`, {
+    axios.get(`/api${window.location.pathname}images`, {
       headers: {
         'Content-Type': 'application/json',
       },
