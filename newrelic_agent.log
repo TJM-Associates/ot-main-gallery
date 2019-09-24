@@ -4557,3 +4557,5 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:18:28.505Z","msg":"Agent state changed from connected to started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:18:29.507Z","msg":"Harvest started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:18:29.745Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:19:29.520Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:19:29.885Z","msg":"Harvest finished."}

@@ -3,3 +3,4 @@ images
 coverage
 *.csv
 newrelic.js
+newrelic_agent.log
