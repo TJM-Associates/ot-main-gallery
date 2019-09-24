@@ -2,7 +2,7 @@
 const cassandra = require('cassandra-driver');
 const { Uuid } = require('cassandra-driver').types;
 
-const client = new cassandra.Client({ contactPoints: ['127.0.0.1:9042', '127.0.0.2:9042', '127.0.0.3:9042'], localDataCenter: 'datacenter1', keyspace: 'restaurant_images' });
+const client = new cassandra.Client({ contactPoints: ['13.57.198.102', '13.57.196.46', '52.53.203.41'], localDataCenter: 'us-west', keyspace: 'restaurant_images' });
 
 
 const getRestaurant = (restaurantId) => {
