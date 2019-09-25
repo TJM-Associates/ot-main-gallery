@@ -11,7 +11,7 @@ const cassandraControl = require('../database/cassandraQueries.js');
 // const db = require('../db/index.js');
 const app = express();
 app.use(bodyParser.json());
-// app.use(morgan());
+app.use(morgan('tiny'));
 app.use(cors());
 app.use(compression());
 app.use('/restaurants/:rid', express.static(path.resolve(__dirname, '../public')));
