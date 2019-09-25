@@ -27,7 +27,7 @@ const batchQueries = (count) => {
     });
 };
 
-batchQueries(4204098);
+batchQueries(4712049);
 
 const batchQueriesBack = (backCount) => {
   if (backCount === 5000000) {
@@ -50,7 +50,7 @@ const batchQueriesBack = (backCount) => {
     });
 };
 
-batchQueriesBack(5795980);
+batchQueriesBack(5286711);
 
 // run back and forward in parllel
 // run in parallel 592000 in 5 min.

@@ -16,6 +16,8 @@ app.use(cors());
 app.use(compression());
 app.use('/restaurants/:rid', express.static(path.resolve(__dirname, '../public')));
 
+app.use('/', express.static('loaderio-a5b33216ec2f778b76f07dbaeeb8d8a3.txt'));
+
 app.get('/api/restaurants/:rid/images', (req, res) => {
   cassandraControl.getRestaurant(req.params.rid)
     .then((docs) => {

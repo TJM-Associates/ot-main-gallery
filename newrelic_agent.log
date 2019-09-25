@@ -4559,3 +4559,17 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:18:29.745Z","msg":"Harvest finished."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:19:29.520Z","msg":"Harvest started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:19:29.885Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:20:29.527Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:20:29.759Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:21:29.529Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:21:29.889Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:22:29.535Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:22:29.820Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:23:29.537Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:23:29.774Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:24:29.541Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:24:29.716Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:25:29.545Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:25:29.777Z","msg":"Harvest finished."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:26:29.548Z","msg":"Harvest started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Jasons-MacBook-Pro-2.local","pid":75989,"time":"2019-09-24T23:26:29.890Z","msg":"Harvest finished."}
